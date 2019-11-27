@@ -64,8 +64,8 @@ class MoneyAgent(Agent):
         
 
     def step(self):
-        if self.alive:
-            if not self.in_city:
-                self.move()            
-            self.interact()
+        
+        if not self.in_city:
+            self.move()            
+        self.interact()
 
