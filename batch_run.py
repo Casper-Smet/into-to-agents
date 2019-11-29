@@ -24,5 +24,7 @@ batch_run.run_all()
 run_data = batch_run.get_model_vars_dataframe()
 run_data.head()
 plt.scatter(run_data.N, run_data.Gini)
+plt.xlabel("Max time steps")
+plt.ylabel("Gini coef")
 
 plt.show()
